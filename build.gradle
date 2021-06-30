@@ -1,0 +1,47 @@
+apply plugin: 'java'
+apply plugin: 'net.serenity-bdd.aggregator' //Agregar comando "Agregate" que es de serenity para construir el reporte
+
+// Descaragar las dependencias del gradle
+buildscript {
+
+    repositories {
+        mavenLocal()
+        mavenCentral()
+        jcenter()
+    }
+
+    dependencies {
+        // Plugin Agregator
+        classpath("net.serenity-bdd:serenity-gradle-plugin:2.0.80")
+    }
+}
+
+repositories {
+    //Valida si hay dependencias descargas en el equipo
+    mavenLocal()
+    //Repositorio en la nube
+    mavenCentral()
+    jcenter()
+}
+
+dependencies {
+    // Dependencias para poder automatizar con Serenity
+    implementation 'net.serenity-bdd:serenity-junit:2.0.80'
+    implementation 'net.serenity-bdd:serenity-cucumber:1.9.45'
+    implementation 'net.serenity-bdd:serenity-core:2.0.80'
+    implementation 'org.slf4j:slf4j-simple:1.7.7'
+    implementation 'com.google.guava:guava:23.0'
+}
+
+// Configurar propiedades delcomando de ejecución de pruebas
+test {
+    //Ignorar los fallos y ejecutar todas las pruebas
+    ignoreFailures = true
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'  // Configurar el encodind del proyecto
+}
+
+//continuar así falle alguna tarea de Gradle
+gradle.startParameter.continueOnFailure = true
