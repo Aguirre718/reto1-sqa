@@ -1,10 +1,10 @@
-com/guru99/bank/pruebas/models/IniciarSesionModel.java
- com.guru99.bank.pruebas.models.IniciarSesionModel
 com/guru99/bank/pruebas/steps/RegistrarUsuarioStep.java
  com.guru99.bank.pruebas.steps.RegistrarUsuarioStep
-com/guru99/bank/pruebas/pages/RegistrarUsuarioPage.java
- com.guru99.bank.pruebas.pages.RegistrarUsuarioPage
+com/guru99/bank/pruebas/models/IniciarSesionModel.java
+ com.guru99.bank.pruebas.models.IniciarSesionModel
 com/guru99/bank/pruebas/pages/IniciarSesionPage.java
  com.guru99.bank.pruebas.pages.IniciarSesionPage
+com/guru99/bank/pruebas/pages/RegistrarUsuarioPage.java
+ com.guru99.bank.pruebas.pages.RegistrarUsuarioPage
 com/guru99/bank/pruebas/steps/IniciarSesionStep.java
  com.guru99.bank.pruebas.steps.IniciarSesionStep

@@ -1,8 +1,8 @@
-com/guru99/bank/pruebas/stepdefinitions/RegistarUsuarioStepDefinition.java
- com.guru99.bank.pruebas.stepdefinitions.RegistarUsuarioStepDefinition
 com/guru99/bank/pruebas/runners/RegistrarUsuario.java
  com.guru99.bank.pruebas.runners.RegistrarUsuario
 com/guru99/bank/pruebas/runners/IniciarSesion.java
  com.guru99.bank.pruebas.runners.IniciarSesion
+com/guru99/bank/pruebas/stepdefinitions/RegistarUsuarioStepDefinition.java
+ com.guru99.bank.pruebas.stepdefinitions.RegistarUsuarioStepDefinition
 com/guru99/bank/pruebas/stepdefinitions/IniciarSesionStepDefinition.java
  com.guru99.bank.pruebas.stepdefinitions.IniciarSesionStepDefinition
