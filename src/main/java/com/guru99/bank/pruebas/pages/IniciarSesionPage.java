@@ -3,8 +3,6 @@ package com.guru99.bank.pruebas.pages;
 import net.thucydides.core.annotations.DefaultUrl;
 import org.openqa.selenium.By;
 
-import java.util.concurrent.TimeUnit;
-
 import static net.thucydides.core.webdriver.ThucydidesWebDriverSupport.getDriver;
 import static org.junit.Assert.assertTrue;
 
@@ -13,8 +11,8 @@ public class IniciarSesionPage {
 
     By txtUsuario = By.name("uid");
     By txtClave = By.name("password");
-    By btnLogin = By.name("btnLogin");
-    By lblText = By.xpath("//marquee[@class='heading3']");
+    By btnEnviar = By.name("btnLogin");
+    By lblTexto = By.xpath("//marquee[@class='heading3']");
 
 
     public void escribirUsuario(String usuario) {
@@ -26,11 +24,11 @@ public class IniciarSesionPage {
     }
 
     public void clickLogin() {
-        getDriver().findElement(btnLogin).click();
+        getDriver().findElement(btnEnviar).click();
     }
 
     public void validarTexto() {
-        assertTrue(getDriver().findElement(lblText).isDisplayed());
+        assertTrue(getDriver().findElement(lblTexto).isDisplayed());
     }
 
     public String obtenerTextoAlerta() {
